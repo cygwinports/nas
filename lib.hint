@@ -1,0 +1,6 @@
+category: Audio X11 Libs
+requires: cygwin libXau6 libXt6 nas
+external-source: nas
+sdesc: "Network Audio System (runtime library)"
+ldesc: "The Network Audio System is a network-transparent,
+client/server audio system based on X11."
