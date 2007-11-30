@@ -5,15 +5,15 @@ client/server audio system based on X11.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  libXau6-1.0.2-1
-  libXaw8-1.0.2-1
-  libXt6-1.0.4-1
+  libXau6-1.0.3-1
+  libXaw8-1.0.3-1
+  libXt6-1.0.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
   cygwin-1.5.24-2
   binutils-20060817-1
-  cygport-0.2.11-1
+  cygport-0.3.7-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   imake-1.0.2-2
@@ -23,23 +23,23 @@ Canonical website:
   http://www.radscan.com/nas.html
 
 Canonical download:
-  http://nas.codebrilliance.com/nas/nas-1.9.src.tar.gz
+  http://downloads.sourceforge.net/nas/
 
 -------------------------------------------
 
 Build instructions:
-  unpack nas-1.9-X-src.tar.bz2
+  unpack nas-1.9.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./nas-1.9-X.cygport all
+  cygport ./nas-1.9.1-X.cygport all
 
 This will create:
-  /usr/src/nas-1.9-X-src.tar.bz2
+  /usr/src/nas-1.9.1-X-src.tar.bz2
 
-  /usr/src/libaudio-devel-1.9-X.tar.bz2
-  /usr/src/libaudio2-1.9-X.tar.bz2
-  /usr/src/nas-1.9-X.tar.bz2
+  /usr/src/libaudio-devel-1.9.1-X.tar.bz2
+  /usr/src/libaudio2-1.9.1-X.tar.bz2
+  /usr/src/nas-1.9.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -66,11 +66,11 @@ Files included in the binary packages:
   /usr/bin/playbucket.exe
   /usr/bin/soundtoh.exe
   /usr/lib/X11/AuErrorDB
-  /usr/share/doc/Cygwin/nas-1.9.README
-  /usr/share/doc/nas-1.9/BUGS
-  /usr/share/doc/nas-1.9/FAQ
-  /usr/share/doc/nas-1.9/README
-  /usr/share/doc/nas-1.9/TODO
+  /usr/share/doc/Cygwin/nas-1.9.1.README
+  /usr/share/doc/nas-1.9.1/BUGS
+  /usr/share/doc/nas-1.9.1/FAQ
+  /usr/share/doc/nas-1.9.1/README
+  /usr/share/doc/nas-1.9.1/TODO
   /usr/share/man/man1/auconvert.1.gz
   /usr/share/man/man1/auctl.1.gz
   /usr/share/man/man1/audemo.1.gz
@@ -256,6 +256,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.9.1-1 -----
+Version bump.
 
 ----- version 1.9-1 -----
 Version bump for security vulnerability.

@@ -1,0 +1,23 @@
+DESCRIPTION="Network Audio System"
+HOMEPAGE="http://www.radscan.com/nas.html"
+SRC_URI="mirror://sourceforge/nas/${P}.src.tar.gz"
+
+PKG_NAMES="nas libaudio2 libaudio-devel"
+PKG_HINTS='setup lib devel'
+PKG_CONTENTS[0]='--exclude=*.dll --exclude=man3 etc/ usr/bin/ usr/lib/X11/ usr/share/'
+PKG_CONTENTS[1]='usr/bin/*.dll'
+PKG_CONTENTS[2]='usr/include/ usr/lib/lib* usr/share/man/man3/'
+
+DIFF_EXCLUDES='Makefile'
+
+src_compile() {
+	lndirs
+	cd ${B}
+	xmkmf || error "xmkmf failed"
+	cygmake -j1 World
+}
+
+src_install() {
+	cd ${B}
+	cyginstall install.man MANPATH=/usr/share/man
+}
