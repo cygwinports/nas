@@ -4,20 +4,20 @@ The Network Audio System is a network-transparent,
 client/server audio system based on X11.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  libXau6-1.0.3-1
-  libXaw8-1.0.3-1
+  cygwin-1.5.25-15
+  libXau6-1.0.4-1
+  libXaw7-1.0.4-2
   libXt6-1.0.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
+  binutils-20080624-2
+  cygport-0.4.2-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   imake-1.0.2-2
   make-3.81-1
+  xorg-cf-files-1.0.2-4
 
 Canonical website:
   http://www.radscan.com/nas.html
@@ -65,8 +65,6 @@ Files included in the binary packages:
   /usr/bin/nasd.exe
   /usr/bin/playbucket.exe
   /usr/bin/soundtoh.exe
-  /usr/lib/X11/AuErrorDB
-  /usr/share/doc/Cygwin/nas-1.9.1.README
   /usr/share/doc/nas-1.9.1/BUGS
   /usr/share/doc/nas-1.9.1/FAQ
   /usr/share/doc/nas-1.9.1/README
@@ -95,6 +93,7 @@ Files included in the binary packages:
 
 (libaudio2)
   /usr/bin/cygaudio-2.dll
+  /usr/lib/X11/AuErrorDB
 
 (libaudio-devel)
   /usr/include/audio/8svx.h
@@ -256,6 +255,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 1.9.1-2 -----
+Rebuilt for Xau7.
 
 ----- version 1.9.1-1 -----
 Version bump.

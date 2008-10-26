@@ -1,5 +1,5 @@
 category: Audio X11 Libs
-requires: cygwin libXau libXt
+requires: cygwin libXau-devel libXt-devel libaudio2
 external-source: nas
 sdesc: "Network Audio System (development)"
 ldesc: "The Network Audio System is a network-transparent,

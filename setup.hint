@@ -1,5 +1,5 @@
 category: Audio X11
-requires: cygwin libaudio2 libXaw8 bash perl
+requires: cygwin libaudio2 libXaw7 bash perl
 sdesc: "Network Audio System (server and clients)"
 ldesc: "The Network Audio System is a network-transparent,
 client/server audio system based on X11."

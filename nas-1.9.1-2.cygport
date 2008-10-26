@@ -1,12 +1,13 @@
 DESCRIPTION="Network Audio System"
 HOMEPAGE="http://www.radscan.com/nas.html"
 SRC_URI="mirror://sourceforge/nas/${P}.src.tar.gz"
+PATCH_URI="1.9.1-build.patch"
 
 PKG_NAMES="nas libaudio2 libaudio-devel"
 PKG_HINTS='setup lib devel'
-PKG_CONTENTS[0]='--exclude=*.dll --exclude=man3 etc/ usr/bin/ usr/lib/X11/ usr/share/'
-PKG_CONTENTS[1]='usr/bin/*.dll'
-PKG_CONTENTS[2]='usr/include/ usr/lib/lib* usr/share/man/man3/'
+nas_CONTENTS='--exclude=*.dll --exclude=man3 etc/ usr/bin/ usr/share/'
+libaudio2_CONTENTS='usr/bin/cygaudio-2.dll usr/lib/X11/'
+libaudio_devel_CONTENTS='usr/include/ usr/lib/lib* usr/share/man/man3/'
 
 DIFF_EXCLUDES='Makefile'
 
