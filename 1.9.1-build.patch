@@ -1,11 +1,6 @@
 --- origsrc/nas-1.9.1/config/NetAudio.tmpl	2007-06-16 14:03:20.000000000 -0500
 +++ src/nas-1.9.1/config/NetAudio.tmpl	2007-11-29 07:14:36.060625000 -0600
-@@ -150,14 +150,19 @@
-  LOCAL_LDFLAGS = _AuUse(-L$(USRLIBDIR), -L$(AUSRC) -L$(USRLIBDIR))
-       DEPAULIB =
-          AULIB = -laudio
--
- #endif /* SunArchitecture */
+@@ -155,9 +155,15 @@
  
  
  #else /* SharedLibAudio */

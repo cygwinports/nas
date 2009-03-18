@@ -4,7 +4,6 @@ SRC_URI="mirror://sourceforge/nas/${P}.src.tar.gz"
 PATCH_URI="1.9.1-build.patch"
 
 PKG_NAMES="nas libaudio2 libaudio-devel"
-PKG_HINTS='setup lib devel'
 nas_CONTENTS='--exclude=*.dll --exclude=man3 etc/ usr/bin/ usr/share/'
 libaudio2_CONTENTS='usr/bin/cygaudio-2.dll usr/lib/X11/'
 libaudio_devel_CONTENTS='usr/include/ usr/lib/lib* usr/share/man/man3/'
@@ -15,7 +14,7 @@ src_compile() {
 	lndirs
 	cd ${B}
 	xmkmf || error "xmkmf failed"
-	cygmake -j1 World
+	cygmake -j1 World CC="${CC}" CXX="${CXX}"
 }
 
 src_install() {

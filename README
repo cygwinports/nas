@@ -4,20 +4,21 @@ The Network Audio System is a network-transparent,
 client/server audio system based on X11.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libXau6-1.0.4-1
-  libXaw7-1.0.4-2
-  libXt6-1.0.5-1
+  cygwin-1.7.0-43
+  libgcc1-4.3.2-2
+  libXau6-1.0.4-10
+  libXaw7-1.0.4-10
+  libXt6-1.0.5-10
 
 Build requirements:
 (besides corresponding -devel packages)
   binutils-20080624-2
-  cygport-0.4.2-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
   imake-1.0.2-2
-  make-3.81-1
-  xorg-cf-files-1.0.2-4
+  make-3.81-2
+  xorg-cf-files-1.0.2-8
 
 Canonical website:
   http://www.radscan.com/nas.html
@@ -28,18 +29,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack nas-1.9.1-X-src.tar.bz2
+  unpack nas-1.9.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./nas-1.9.1-X.cygport all
+  cygport ./nas-1.9.2-X.cygport all
 
 This will create:
-  /usr/src/nas-1.9.1-X-src.tar.bz2
+  /usr/src/nas-1.9.2-X-src.tar.bz2
 
-  /usr/src/libaudio-devel-1.9.1-X.tar.bz2
-  /usr/src/libaudio2-1.9.1-X.tar.bz2
-  /usr/src/nas-1.9.1-X.tar.bz2
+  /usr/src/libaudio-devel-1.9.2-X.tar.bz2
+  /usr/src/libaudio2-1.9.2-X.tar.bz2
+  /usr/src/nas-1.9.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -65,10 +66,10 @@ Files included in the binary packages:
   /usr/bin/nasd.exe
   /usr/bin/playbucket.exe
   /usr/bin/soundtoh.exe
-  /usr/share/doc/nas-1.9.1/BUGS
-  /usr/share/doc/nas-1.9.1/FAQ
-  /usr/share/doc/nas-1.9.1/README
-  /usr/share/doc/nas-1.9.1/TODO
+  /usr/share/doc/nas/BUGS
+  /usr/share/doc/nas/FAQ
+  /usr/share/doc/nas/README
+  /usr/share/doc/nas/TODO
   /usr/share/man/man1/auconvert.1.gz
   /usr/share/man/man1/auctl.1.gz
   /usr/share/man/man1/audemo.1.gz
@@ -256,17 +257,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 1.9.1-2 -----
-Rebuilt for Xau7.
-
------ version 1.9.1-1 -----
-Version bump.
-
------ version 1.9-1 -----
-Version bump for security vulnerability.
-
------ version 1.8-1 -----
-Initial release for Cygwin.
+----- version 1.9.2-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
