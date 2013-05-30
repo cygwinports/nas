@@ -1,6 +1,0 @@
-category: Audio X11
-requires: libXau-devel libXt-devel libaudio2
-external-source: nas
-sdesc: "Network Audio System (development)"
-ldesc: "The Network Audio System is a network-transparent,
-client/server audio system based on X11."

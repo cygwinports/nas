@@ -1,11 +1,20 @@
-DESCRIPTION="Network Audio System"
+NAME="nas"
+VERSION=1.9.3
+RELEASE=1
+CATEGORY="Audio"
+SUMMARY="Network Audio System"
+DESCRIPTION="The Network Audio System is a network-transparent, client/server
+audio system based on X11."
 HOMEPAGE="http://www.radscan.com/nas.html"
 SRC_URI="mirror://sourceforge/nas/${P}.src.tar.gz"
 PATCH_URI="1.9.1-build.patch"
 
 PKG_NAMES="nas libaudio2 libaudio-devel"
+nas_SUMMARY="${SUMMARY} (server and clients)"
 nas_CONTENTS='--exclude=*.dll --exclude=man3 etc/ usr/bin/ usr/share/'
+libaudio2_SUMMARY="${SUMMARY} library (runtime)"
 libaudio2_CONTENTS='usr/bin/cygaudio-2.dll usr/lib/X11/'
+libaudio_devel_SUMMARY="${SUMMARY} library (development)"
 libaudio_devel_CONTENTS='usr/include/ usr/lib/lib* usr/share/man/man3/'
 
 DIFF_EXCLUDES='Makefile'
